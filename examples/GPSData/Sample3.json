@@ -1,0 +1,5 @@
+{"class":"TPV","tag":"RMC","device":"stdin","mode":3,"time":"2013-05-11T22:00:19.000Z","ept":0.005,"lat":28.107388333,"lon":-81.280630000,"alt":33.530,"epx":2.104,"epy":1.882,"epv":7.475,"track":161.3090,"speed":35.076,"climb":0.000}
+{"class":"TPV","tag":"RMC","device":"stdin","mode":3,"time":"2013-05-11T22:12:52.000Z","ept":0.005,"lat":27.960848333,"lon":-81.099910000,"alt":35.880,"epx":2.092,"epy":1.870,"epv":7.475,"track":134.8330,"speed":35.053,"climb":0.000}
+{"class":"TPV","tag":"RMC","device":"stdin","mode":3,"time":"2013-05-11T22:30:36.000Z","ept":0.005,"lat":27.690340000,"lon":-80.895043333,"alt":26.520,"epx":2.128,"epy":1.881,"epv":7.475,"track":179.1280,"speed":35.082,"climb":0.000}
+{"class":"TPV","tag":"RMC","device":"stdin","mode":3,"time":"2013-05-11T22:36:51.000Z","ept":0.005,"lat":27.600833333,"lon":-80.823228333,"alt":26.600,"epx":2.161,"epy":1.879,"epv":7.475,"track":112.4770,"speed":4.786,"climb":0.000}
+{"class":"TPV","tag":"RMC","device":"stdin","mode":3,"time":"2013-05-11T22:40:20.000Z","ept":0.005,"lat":27.600118333,"lon":-80.821630000,"alt":1.320,"epx":8.636,"epy":7.507,"epv":29.336,"track":0.0000,"speed":0.000,"climb":0.000}

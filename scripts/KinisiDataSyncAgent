@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Wait before first upload
+# This helps get GPS satellite acquisition and network connectivity
+currentTime="$(date +'%H:%M:%S')"
+currentDate="$(date +'%m-%d-%y')"
+
+echo Kinisi Data Sync Agent Started at $currentTime on $currentDate.
+
+sleep 60
+
+while : 
+do
+ java -jar /home/pi/KinisiAgentAlpha_v0.1.jar
+ sleep 60
+done

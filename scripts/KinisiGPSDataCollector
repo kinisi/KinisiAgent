@@ -1,0 +1,23 @@
+#!/bin/bash
+
+startTime="$(date +'%H:%M:%S')"
+startDate="$(date +'%m-%d-%y')"
+
+echo Kinisi GPS Data Collector Started at $startTime on $startDate.
+
+while :
+do
+ filename=GPSData
+ currentTime="$(date +'%H:%M:%S')"
+ currentDate="$(date +'%m-%d-%y')"
+ FILE="/home/pi/GPSData/$filename.$currentDate.$currentTime.json"
+ FILE_RUNNING="/home/pi/GPSData_Realtime/$filename.$currentDate.$currentTime.json"
+ TEMP_FILE="/home/pi/GPSData_Realtime/tempFile.json"
+ gpspipe -rn 50 | gpsdecode > $FILE_RUNNING
+ tail -1 $FILE_RUNNING > $TEMP_FILE
+ mv $TEMP_FILE $FILE
+ rm $FILE_RUNNING
+ echo Kinisi GPS Data Collector gathered data at $currentTime on $currentDate.
+ sleep 2
+done
+
