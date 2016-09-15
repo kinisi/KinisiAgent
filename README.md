@@ -1,7 +1,9 @@
 KinisiAgent
 ===================
 
-This is development code for the data collection agent that runs on the Kinisi Raspberry Pi prototypes. The Java application created from these java files has been used to perform both realtime and cached/delayed tracking of moving vehicles, people and other objects. 
+This is the early prototype development code for the GPS data collection agent that ran on the Kinisi Raspberry Pi. While functional for demo purposes, it has since been superceded by the NodeJS agent, which is more production-ready. The main development goal was to create a quick, functioning GPS tracking app over a weekend to demo and kick off the project, or otherwise demonstrate that the concept was not feasible. The secondary goal was to attempt using Java on the Pi, in the time before Oracle released a stable Java platform for the Pi. This would help move forward testing of Pi hardware boundaries like battery life, ruggedness, and peripheral capabilities, without waiting for vendors and mainstream developers to release their code. 
+
+The Java application created from these java files has been used to perform both realtime and cached/delayed tracking (like through a tunnel or rurual cell data dead spot) of moving vehicles, people and other objects. External packages were not used, so as to not rely on third party developers to maintain or update their code, as the Pi's JDK/JRE goes through its coming revisions with the pending Oracle release. Simplicity was intended, a.k.a. "a hack", so that the project could be coded quickly for the goals stated above. 
 
 Technical Overview
 -------------------
